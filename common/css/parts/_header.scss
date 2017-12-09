@@ -24,9 +24,10 @@ div#wrapper {
         nav {
             float: right;
             color: $nav_c;
+            width: 40%;
             margin-top: 13px;
             font-family: $nav_h2_font;
-            font-size: 1.4rem;
+            @include fontsize(14);
             ul {
                 &.gnav {
                     text-align: right;

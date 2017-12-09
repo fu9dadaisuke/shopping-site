@@ -10,15 +10,17 @@ article {
         div.cover {
             height: 300px;
             background: $dummy_c;
+            margin-bottom: 30px;
         }
         section {
-            margin-top: 30px;
             h2 {
                 font-family: $nav_h2_font;
-                color: $nav_c;
+                color: $h_c;
                 display: flex;
                 align-items: center;
                 @include fontsize(16);
+                margin-top: 25px;
+                margin-bottom: 25px;
                 &:before,
                 &:after {
                     content: "";
@@ -33,17 +35,29 @@ article {
                     margin-left: .4em;
                 }
             }
-            div.item_wrapper {
+            div.column_box {
                 display: flex;
                 align-items: center;
                 align-items: stretch;
                 flex-wrap: wrap;
                 justify-content: space-around;
-                div.item_box {
+                div.column_3 {
                     width: 29%;
                     margin-top: 3px;
                     background: $content_c;
                     padding: 13px 13px 20px 13px;
+                }
+                div.column_2 {
+                    width: 46%;
+                    background: $content_c;
+                    padding: 13px 13px 55px 13px;
+                    h3 {
+                        color: $h_c;
+                        @include fontsize(16);
+                    }
+                    h4 {
+                        color: $h_c;
+                    }
                 }
             }
         }
