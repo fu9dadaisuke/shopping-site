@@ -1,0 +1,24 @@
+@charset "utf-8";
+// layout setting
+body {
+    background-color: $base_c;
+    width: 100%;
+}
+
+div#wrapper {
+    width: 960px;
+    margin: 0 auto;
+    header {
+        width: 100%;
+        margin-bottom: 40px;
+        //dummy colorset
+        background-color: red;
+        div.logo {
+            text-align: center;
+            h1 {
+                color: #434343;
+                display: inline;
+            }
+        }
+    }
+}
