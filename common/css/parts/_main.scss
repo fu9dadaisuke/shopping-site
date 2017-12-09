@@ -9,8 +9,7 @@ article {
         float: left;
         div.cover {
             height: 300px;
-            //* dummy color set
-            background: #908e8e;
+            background: $dummy_c;
         }
         section {
             margin-top: 30px;
@@ -19,6 +18,7 @@ article {
                 color: $nav_c;
                 display: flex;
                 align-items: center;
+                @include fontsize(16);
                 &:before,
                 &:after {
                     content: "";
@@ -31,6 +31,19 @@ article {
                 }
                 &:after {
                     margin-left: .4em;
+                }
+            }
+            div.item_wrapper {
+                display: flex;
+                align-items: center;
+                align-items: stretch;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                div.item_box {
+                    width: 29%;
+                    margin-top: 3px;
+                    background: $content_c;
+                    padding: 13px 13px 20px 13px;
                 }
             }
         }
