@@ -19,18 +19,25 @@ div#wrapper {
         margin-top: 40px;
         margin-bottom: 40px;
         //dummy colorset
-        background-color: red;
+        background-color: $base_c;
         div.logo {
             float: left;
         }
         nav {
             float: right;
+            width: 44%;
             ul {
                 display: inline-block;
+                text-align: right;
                 li {
                     display: inline-block;
                     padding: 0 1%;
+                    font-weight: bold;
                 }
+            }
+            div.social {
+                display: inline-block;
+                text-align: right;
             }
         }
     }
