@@ -28,10 +28,9 @@ div#wrapper {
             margin-top: 25px;
             font-family: $nav_font;
             font-size: 1.4rem;
-            width: 39%;
             ul {
                 &.gnav {
-                    width: 100%;
+                    text-align: right;
                 }
                 li {
                     display: inline-block;
