@@ -1,7 +1,38 @@
 @charset "utf-8";
-div#main {
-    width: 700px;
-    margin: 0 10px;
-    background-color: blue;
-    float: left;
+article {
+    width: 100%;
+    margin-top: 40px;
+    background: $base_c;
+    div#main {
+        width: 700px;
+        margin: 0 1%;
+        float: left;
+        div.cover {
+            height: 300px;
+            //* dummy color set
+            background: #908e8e;
+        }
+        section {
+            margin-top: 30px;
+            h2 {
+                font-family: $nav_h2_font;
+                color: $nav_c;
+                display: flex;
+                align-items: center;
+                &:before,
+                &:after {
+                    content: "";
+                    flex-grow: 1;
+                    border-top: 1px solid #e2ddd4;
+                    display: block;
+                }
+                &:before {
+                    margin-right: .4em;
+                }
+                &:after {
+                    margin-left: .4em;
+                }
+            }
+        }
+    }
 }
