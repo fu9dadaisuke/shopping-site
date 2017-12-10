@@ -23,7 +23,6 @@ div#wrapper {
         }
         nav {
             float: right;
-            color: $nav_c;
             width: 40%;
             margin-top: 13px;
             font-family: $nav_h2_font;
@@ -36,6 +35,10 @@ div#wrapper {
                     display: inline-block;
                     padding: 0 1%;
                     font-weight: bold;
+                    a {
+                        text-decoration: none;
+                        color: $nav_c;
+                    }
                 }
             }
         }
