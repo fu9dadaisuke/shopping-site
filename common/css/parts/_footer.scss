@@ -1,8 +1,30 @@
 @charset "utf-8";
 footer {
-    width: 960px;
-    clear: both;
+    width: 100%;
     margin-top: 90px;
-    //dummy colorset
-    background-color: yellow;
+    border-top: #887f69 solid 1px;
+    text-align: center;
+    position: relative;
+    ul {
+        margin-top: 30px;
+        li {
+            display: inline;
+            position: relative;
+            margin: 0 2rem;
+            @include fontsize(11);
+            &:nth-child(-n+2):after {
+                content: "・";
+                position: absolute;
+                right: -3rem;
+            }
+            a {
+                color: #000;
+            }
+        }
+    }
+    p {
+        @include fontsize(11);
+        color: #b8b4ac;
+        margin-top: 30px;
+    }
 }
