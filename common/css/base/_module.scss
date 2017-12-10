@@ -1,0 +1,22 @@
+@charset "utf-8";
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure.center,
+p.center,
+span.center {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        opacity: 0.7;
+    }
+}

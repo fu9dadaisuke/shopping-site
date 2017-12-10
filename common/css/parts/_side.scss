@@ -17,9 +17,7 @@ div#side_menu {
     //*module setting
     h2 {
         @include side_h;
-    }
-    a {
-        text-decoration: none;
+        margin-bottom: 0;
     }
     ul {
         li {
@@ -47,6 +45,16 @@ div#side_menu {
             font-weight: bold;
         }
         form {
+            position: relative;
+            &:after {
+                font-family: 'FontAwesome';
+                content: "\f002";
+                position: absolute;
+                top: 7px;
+                left: 85%;
+                @include fontsize(15);
+                color: #aaaaaa;
+            }
             input {
                 height: 30px;
                 width: 90%;
@@ -55,6 +63,8 @@ div#side_menu {
                 padding: 0 5%;
                 font-style: italic;
                 color: #b9b9b9;
+                display: block;
+                position: relative;
             }
         }
     }
@@ -62,25 +72,60 @@ div#side_menu {
         @include side_h;
         display: block;
         @include fontsize(15);
+        position: relative;
         &:after {
             font-family: 'FontAwesome';
             content: "\f105";
-            position: relative;
+            position: absolute;
             top: 1px;
-            left: 50%;
+            left: 89%;
             @include fontsize(20);
         }
     }
     nav.local_nav {
         a {
-            h2:after {
-                font-family: 'FontAwesome';
-                content: "\f105";
+            h2 {
+                margin-bottom: 0;
                 position: relative;
-                top: 1px;
-                left: 41%;
-                @include fontsize(20);
+                &:after {
+                    font-family: 'FontAwesome';
+                    content: "\f107 ";
+                    position: absolute;
+                    top: 1px;
+                    left: 87%;
+                    @include fontsize(20);
+                }
             }
         }
+        ul {
+            margin-top: 0;
+            li {
+                margin-bottom: 1px;
+                a {
+                    display: block;
+                    position: relative;
+                    @extend a.page_link;
+                    background-color: $content_c;
+                    font-weight: normal;
+                    &:hover {
+                        filter: brightness(90%);
+                    }
+                    &:after {
+                        color: #b2b2b2;
+                    }
+                    &:visited {
+                        color: #000!important;
+                    }
+                }
+            }
+        }
+    }
+    div.side_box {
+        background-color: $content_c;
+        padding-top: 13px;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 20px;
+        width: 94%;
     }
 }

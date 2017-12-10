@@ -1,10 +1,8 @@
 @charset "utf-8";
 @import 'base/font';
 @import 'base/color';
+@import 'base/module';
 @import 'parts/header';
 @import 'parts/main';
 @import 'parts/side';
 @import 'parts/footer';
-ul {
-    padding: 0;
-}
