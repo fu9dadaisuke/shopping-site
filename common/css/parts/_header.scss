@@ -1,11 +1,4 @@
 @charset "utf-8";
-// clear fix
-.clearfix:after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
 body {
     background-color: $base_c;
     width: 100%;
@@ -14,6 +7,9 @@ body {
 div#wrapper {
     width: 960px;
     margin: 0 auto;
+    @include mq() {
+        width: 100%;
+    }
     header {
         width: 100%;
         margin-top: 40px;

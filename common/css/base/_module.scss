@@ -4,12 +4,21 @@ figure {
     padding: 0;
 }
 
+// clear fix
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+// align center
 figure.center,
 p.center,
 span.center {
     text-align: center;
 }
 
+// list style
 ul {
     padding: 0;
 }

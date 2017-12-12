@@ -14,6 +14,10 @@ div#side_menu {
     width: 22%;
     margin: 0 1%;
     float: left;
+    //*sp setting
+    @include mq(sp) {
+        display: none;
+    }
     //*module setting
     h2 {
         @include side_h;

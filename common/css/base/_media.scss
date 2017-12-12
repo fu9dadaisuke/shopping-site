@@ -1,0 +1,7 @@
+@charset "utf-8";
+$mq-breakpoints: ( 'sp': 320px, 'tb': 768px, 'pc': 960px, );
+@mixin mq($breakpoint: sp) {
+    @media screen and (max-width: #{map-get($mq-breakpoints, $breakpoint)}) {
+        @content;
+    }
+}
