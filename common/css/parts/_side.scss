@@ -8,6 +8,10 @@
     color: $linkbtn_font_c;
     text-decoration: none;
     font-weight: bold;
+    @include mq(sp) {
+        margin-top: 10px;
+        padding-left: 5%;
+    }
 }
 
 div#side_menu {
@@ -16,12 +20,19 @@ div#side_menu {
     float: left;
     //*sp setting
     @include mq(sp) {
-        display: none;
+        float: none;
+        width: 94%;
+        margin: 0 3%;
     }
     //*module setting
     h2 {
         @include side_h;
         margin-bottom: 0;
+        @include mq(sp) {
+            @include fontsize(12);
+            width: 94%;
+            padding-right: 0;
+        }
     }
     ul {
         li {
@@ -42,11 +53,19 @@ div#side_menu {
         padding: 20px 10%;
         height: 60px;
         background: $content_c;
+        @include mq(sp) {
+            padding: 20px 5%;
+            height: 30px;
+        }
         p {
             color: $h_c;
             @include fontsize(12);
             margin-top: 0;
             font-weight: bold;
+            @include mq(sp) {
+                display: none;
+                margin-top: 15px;
+            }
         }
         form {
             position: relative;
@@ -84,6 +103,13 @@ div#side_menu {
             top: 1px;
             left: 89%;
             @include fontsize(20);
+            @include mq(sp) {
+                left: 93%;
+            }
+        }
+        @include mq(sp) {
+            margin-top: 15px;
+            @include fontsize(12);
         }
     }
     nav.local_nav {
@@ -98,6 +124,9 @@ div#side_menu {
                     top: 1px;
                     left: 87%;
                     @include fontsize(20);
+                    @include mq(sp) {
+                        left: 92%;
+                    }
                 }
             }
         }
@@ -119,6 +148,9 @@ div#side_menu {
                     }
                     &:visited {
                         color: #000!important;
+                    }
+                    @include mq(sp) {
+                        margin-top: 1px;
                     }
                 }
             }

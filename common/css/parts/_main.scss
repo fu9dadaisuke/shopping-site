@@ -7,10 +7,18 @@ article {
         width: 73%;
         margin: 0 1%;
         float: left;
+        @include mq(sp) {
+            width: 94%;
+            margin: 0 3%;
+            float: none;
+        }
         div.cover {
             height: 300px;
             background: $dummy_c;
             margin-bottom: 30px;
+            @include mq(sp) {
+                height: 265px;
+            }
         }
         section {
             h2 {
@@ -27,6 +35,11 @@ article {
                     flex-grow: 1;
                     border-top: 1px solid #e2ddd4;
                     display: block;
+                    @include mq(sp) {
+                        content: "";
+                        flex-grow: 1;
+                        border: none;
+                    }
                 }
                 &:before {
                     margin-right: .4em;
@@ -49,11 +62,37 @@ article {
                     padding-bottom: 20px;
                     padding-left: 1%;
                     padding-right: 1%;
+                    @include mq(sp) {
+                        width: 45%;
+                        padding-top: 10px;
+                        padding-left: 1%;
+                        padding-right: 1%;
+                        padding-bottom: 17px;
+                    }
+                    p,
+                    figure {
+                        @include mq(sp) {
+                            padding: 0 3%;
+                            @include fontsize(11)
+                        }
+                    }
                 }
                 div.column_2 {
                     width: 47%;
                     background: $content_c;
                     padding: 13px 1% 55px 1%;
+                    @include mq(sp) {
+                        width: 94%;
+                        margin-top: 5px;
+                        padding-top: 10px;
+                        padding-bottom: 15px;
+                    }
+                    section {
+                        @include mq(sp) {
+                            padding-left: 3%;
+                            padding-right: 3%;
+                        }
+                    }
                     h3 {
                         color: $h_c;
                         @include fontsize(16);

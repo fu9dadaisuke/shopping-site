@@ -7,7 +7,7 @@ body {
 div#wrapper {
     width: 960px;
     margin: 0 auto;
-    @include mq() {
+    @include mq(sp) {
         width: 100%;
     }
     header {
@@ -16,6 +16,10 @@ div#wrapper {
         background-color: $base_c;
         div.logo {
             float: left;
+            @include mq(sp) {
+                width: 100%;
+                text-align: center;
+            }
         }
         nav {
             float: right;
