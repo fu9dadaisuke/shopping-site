@@ -4,7 +4,7 @@
     line-height: 45px;
     padding: 0 10%;
     background-color: $linkbtn_c;
-    width: 80%;
+    width: 100%;
     color: $linkbtn_font_c;
     text-decoration: none;
     font-weight: bold;
@@ -28,9 +28,10 @@ div#side_menu {
     h2 {
         @include side_h;
         margin-bottom: 0;
+        @include fontsize(12);
         @include mq(sp) {
             @include fontsize(12);
-            width: 94%;
+            width: 100%;
             padding-right: 0;
         }
     }
@@ -42,20 +43,28 @@ div#side_menu {
     a.round_btn {
         @include side_h;
         text-align: center;
+        width: 60%;
+        margin: 0 auto;
         height: 30px;
         border-radius: 30px;
-        @include fontsize(15);
+        @include fontsize(12);
         line-height: 30px;
         display: block;
+        @include mq(sp) {
+            padding-left: 0;
+            padding-right: 0;
+            width: 70%;
+            display: inline-block;
+            margin-top: 0;
+        }
     }
     //*unique setting
     div.search {
         padding: 20px 10%;
-        height: 60px;
         background: $content_c;
         @include mq(sp) {
             padding: 20px 5%;
-            height: 30px;
+            margin-top: 15px;
         }
         p {
             color: $h_c;
@@ -80,7 +89,7 @@ div#side_menu {
             }
             input {
                 height: 30px;
-                width: 90%;
+                width: 100%;
                 background: #eee;
                 border: none;
                 padding: 0 5%;
@@ -94,7 +103,7 @@ div#side_menu {
     a.page_link {
         @include side_h;
         display: block;
-        @include fontsize(15);
+        @include fontsize(12);
         position: relative;
         &:after {
             font-family: 'FontAwesome';
@@ -162,6 +171,21 @@ div#side_menu {
         padding-left: 3%;
         padding-right: 3%;
         padding-bottom: 20px;
-        width: 94%;
+        width: 100%;
+        @include mq(sp) {
+            display: flex;
+            figure {
+                width: 50%;
+            }
+            div.sp_column {
+                @include mq(sp) {
+                    width: 50%;
+                    padding-left: 3%;
+                    p {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
     }
 }

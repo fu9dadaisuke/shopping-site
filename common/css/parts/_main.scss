@@ -3,6 +3,9 @@ article {
     width: 100%;
     margin-top: 40px;
     background: $base_c;
+    @include mq(sp) {
+        margin-top: 0;
+    }
     div#main {
         width: 73%;
         margin: 0 1%;
@@ -55,7 +58,7 @@ article {
                 flex-wrap: wrap;
                 justify-content: space-around;
                 div.column_3 {
-                    width: 31%;
+                    width: 33%;
                     margin-top: 3px;
                     background: $content_c;
                     padding-top: 13px;
@@ -63,7 +66,7 @@ article {
                     padding-left: 1%;
                     padding-right: 1%;
                     @include mq(sp) {
-                        width: 45%;
+                        width: 49%;
                         padding-top: 10px;
                         padding-left: 1%;
                         padding-right: 1%;
@@ -72,17 +75,16 @@ article {
                     p,
                     figure {
                         @include mq(sp) {
-                            padding: 0 3%;
                             @include fontsize(11)
                         }
                     }
                 }
                 div.column_2 {
-                    width: 47%;
+                    width: 49.5%;
                     background: $content_c;
                     padding: 13px 1% 55px 1%;
                     @include mq(sp) {
-                        width: 94%;
+                        width: 100%;
                         margin-top: 5px;
                         padding-top: 10px;
                         padding-bottom: 15px;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="48" height="48"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st0" d="M12,12h24v6H12V12z M12,21h24v6H12V21z M12,30h24v6H12V30z M42,9c0-1.7-1.3-3-3-3H9C7.3,6,6,7.3,6,9v30
+		c0,1.7,1.3,3,3,3h30c1.7,0,3-1.3,3-3V9z M39,48H9c-5,0-9-4-9-9V9c0-5,4-9,9-9h30c5,0,9,4,9,9v30C48,44,44,48,39,48z"/>
+</g>
+</svg>

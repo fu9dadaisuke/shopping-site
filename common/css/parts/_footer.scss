@@ -1,21 +1,44 @@
 @charset "utf-8";
+div.pagetop {
+    text-align: right;
+    margin-top: 60px;
+    @include mq(sp) {
+        text-align: center;
+        @include fontsize(15);
+        margin-top: 23.5px;
+        margin-bottom: 30px;
+    }
+    a {
+        color: #000;
+        position: relative;
+        &:before {
+            font-family: 'FontAwesome';
+            content: "\f176";
+            position: absolute;
+            top: 0.5px;
+            left: -20%;
+            @include fontsize(12);
+        }
+    }
+}
+
 footer {
     width: 100%;
-    margin-top: 90px;
+    margin-top: 20px;
     border-top: #887f69 solid 1px;
     text-align: center;
     position: relative;
     ul {
-        margin-top: 30px;
         li {
             display: inline;
             position: relative;
-            margin: 0 2rem;
+            margin: 0 1rem;
             @include fontsize(11);
-            &:nth-child(-n+2):after {
-                content: "・";
-                position: absolute;
-                right: -3rem;
+            @include mq(sp) {
+                margin: 0;
+                &:last-of-type {
+                    display: block;
+                }
             }
             a {
                 color: #000;
