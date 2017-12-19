@@ -19,11 +19,13 @@
     <link rel="stylesheet" href="common/css/normalize.css">
     <link rel="stylesheet" href="common/css/common.css">
     <link rel="stylesheet" href="common/css/font-awesome.min.css">
-          <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="common/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="common/css/owl.theme.default.css">
     <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="common/js/owl.carousel.min.js"></script>
+    <script src="common/js/carousel.js"></script>
 
 
     <!-- Favicon
@@ -65,13 +67,13 @@
                             <li><a href="">MY PAGE</a></li>
                             <li><a href="">SHOPPING GUIDE</a></li>
                         </ul>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#sp_menu").click(function() {
-            $(".sp_menu_toggle").slideToggle();
-        });
-    });
-</script>
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                $("#sp_menu").click(function() {
+                                    $(".sp_menu_toggle").slideToggle();
+                                });
+                            });
+                        </script>
                     </li>
                 </ul>
 
@@ -79,7 +81,11 @@
         </header>
         <article class="clearfix">
             <div id="main">
-                <div class="cover">
+                <div class="cover owl-carousel owl-theme">
+                        <img src="images/ca_banner.jpg" alt="">
+                        <img src="images/ca_banner.jpg" alt="">
+                         <img src="images/ca_banner.jpg" alt="">
+                          <img src="images/ca_banner.jpg" alt="">
 
                 </div>
                 <section>
@@ -225,7 +231,7 @@
                     <figure class="center">
                         <img src="common/images/about_img.jpg" alt="" width="196" height="125">
                     </figure>
-<div class="sp_column">
+                    <div class="sp_column">
                         <p>お店の説明お店の説明お店の説明がはいりますお店の説明お店の説明お店の説明</p>
                         <a href="" class="round_btn">MORE</a>
                     </div>
@@ -236,8 +242,8 @@
                     <figure class="center">
                         <img src="common/images/shopinfo_img.jpg" alt="" width="196" height="125">
                     </figure>
-                    
-<div class="sp_column">
+
+                    <div class="sp_column">
                         <p>お店の説明お店の説明お店の説明がはいりますお店の説明お店の説明お店の説明</p>
                         <a href="" class="round_btn">MORE</a>
                     </div>
