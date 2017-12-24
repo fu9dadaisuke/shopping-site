@@ -10,10 +10,51 @@ article {
         width: 73%;
         margin: 0 1%;
         float: left;
-        @include mq(sp) {
+        @include mq(tb) {
             width: 94%;
             margin: 0 3%;
             float: none;
+        }
+        div.bread_c {
+            width: 100%;
+            background-color: #e8e4da;
+            padding: 10px 2%;
+            margin-bottom: 10px;
+            color: #887f69;
+            @include mq(sp) {
+                padding: 10px 8%;
+            }
+            ul {
+                margin: 0;
+                padding-left: 1%;
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    @include fontsize(11);
+                    position: relative;
+                    margin-left: 1rem;
+                    &:nth-child(n+2):before {
+                        content: "/";
+                        position: absolute;
+                        left: -1rem;
+                        @include mq(sp) {
+                            left: -10%;
+                        }
+                    }
+                    &:first-of-type {
+                        a {
+                            position: relative;
+                            &:first-of-type:before {
+                                content: "\f015";
+                                font-family: 'FontAwesome';
+                                @include fontsize(15);
+                                position: absolute;
+                                left: -55%;
+                            }
+                        }
+                    }
+                }
+            }
         }
         div.cover {
             margin-bottom: 30px;
@@ -56,6 +97,11 @@ article {
                 align-items: stretch;
                 flex-wrap: wrap;
                 justify-content: space-around;
+                &:after {
+                    content: "";
+                    width: 49%;
+                    display: block;
+                }
                 div.column_3 {
                     width: 33%;
                     margin-top: 3px;
@@ -100,6 +146,29 @@ article {
                     }
                     h4 {
                         color: $h_c;
+                    }
+                }
+            }
+            div.btn_area {
+                margin-top: 20px;
+                a.btn {
+                    line-height: 45px;
+                    display: inline-block;
+                    color: $linkbtn_font_c;
+                    text-align: center;
+                    background-color: $linkbtn_c;
+                    width: 17%;
+                    text-decoration: none;
+                    font-weight: bold;
+                    @include fontsize(12);
+                    @include mq(sp) {
+                        width: 33%;
+                    }
+                    &:first-of-type {
+                        float: left;
+                    }
+                    &:last-of-type {
+                        float: right;
                     }
                 }
             }
