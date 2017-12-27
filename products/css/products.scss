@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import '../../common/css/base/font';
+@import '../../common/css/base/color';
+@import '../../common/css/base/media';
+@import '../../common/css/base/module';
+div.products_area {
+    background-color: #fff;
+    padding: 40px 8% 80px;
+    width: 100%;
+    h1 {
+        @include fontsize(14);
+        float: left;
+    }
+    p.product_no {
+        float: right;
+        color: #a6a6a6;
+        @include fontsize(10)
+    }
+    div.photo_area {
+        clear: both;
+        border-top: 1px #e3e8cf solid;
+        width: 100%;
+        padding-top: 20px;
+        figure {
+            width: 70%;
+            margin-right: 3%;
+            float: left;
+        }
+        div.thum {
+            width: 23%;
+            float: right;
+        }
+    }
+}
