@@ -1,19 +1,4 @@
 @charset "utf-8";
-@mixin side_h {
-    height: 45px;
-    line-height: 45px;
-    padding: 0 10%;
-    background-color: $linkbtn_c;
-    width: 100%;
-    color: $linkbtn_font_c;
-    text-decoration: none;
-    font-weight: bold;
-    @include mq(tb) {
-        margin-top: 10px;
-        padding-left: 5%;
-    }
-}
-
 div#side_menu {
     width: 22%;
     margin: 0 1%;
