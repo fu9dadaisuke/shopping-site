@@ -1,7 +1,7 @@
 @charset "utf-8";
 article {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 25px;
     background: $base_c;
     @include mq(sp) {
         margin-top: 0;
@@ -37,9 +37,6 @@ article {
                         content: "/";
                         position: absolute;
                         left: -1rem;
-                        @include mq(sp) {
-                            left: -10%;
-                        }
                     }
                     &:first-of-type {
                         a {

@@ -62,30 +62,187 @@ img {
   max-width: 100%;
   height: auto; }
 
-div.products_area {
+article div#main div.products_area {
   background-color: #fff;
   padding: 40px 8% 80px;
   width: 100%; }
-  div.products_area h1 {
+  article div#main div.products_area h1 {
     font-size: 14px;
     font-size: 1.4rem;
     float: left; }
-  div.products_area p.product_no {
+  article div#main div.products_area p.product_no {
     float: right;
     color: #a6a6a6;
     font-size: 10px;
     font-size: 1rem; }
-  div.products_area div.photo_area {
+  article div#main div.products_area div.photo_area {
     clear: both;
     border-top: 1px #e3e8cf solid;
     width: 100%;
-    padding-top: 20px; }
-    div.products_area div.photo_area figure {
-      width: 70%;
-      margin-right: 3%;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    article div#main div.products_area div.photo_area figure {
+      width: 72%;
+      margin-right: 1%;
       float: left; }
-    div.products_area div.photo_area div.thum {
-      width: 23%;
+      @media screen and (max-width: 700px) {
+        article div#main div.products_area div.photo_area figure {
+          float: none;
+          width: 100%;
+          text-align: center; } }
+    article div#main div.products_area div.photo_area div.thum {
+      width: 27%;
       float: right; }
+      @media screen and (max-width: 700px) {
+        article div#main div.products_area div.photo_area div.thum {
+          float: none;
+          width: 100%; } }
+      article div#main div.products_area div.photo_area div.thum ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 0; }
+        article div#main div.products_area div.photo_area div.thum ul li {
+          width: 48%;
+          margin-bottom: 5px;
+          height: auto;
+          list-style: none; }
+          @media screen and (max-width: 700px) {
+            article div#main div.products_area div.photo_area div.thum ul li {
+              width: 19%; } }
+          article div#main div.products_area div.photo_area div.thum ul li img {
+            max-height: 73px; }
+  article div#main div.products_area h2 {
+    display: inline-block;
+    margin: 0; }
+    article div#main div.products_area h2:before {
+      content: none; }
+    article div#main div.products_area h2:after {
+      content: none; }
+  article div#main div.products_area section.color_size_area, article div#main div.products_area div.buy_area div.confirm_info section.price_area, article div#main div.products_area div.buy_area div.confirm_info section.quantity_area, article div#main div.products_area section.detail_area {
+    border-top: 1px #e3e8cf solid;
+    padding: 25px 0; }
+    article div#main div.products_area section.color_size_area table, article div#main div.products_area div.buy_area div.confirm_info section.price_area table, article div#main div.products_area div.buy_area div.confirm_info section.quantity_area table, article div#main div.products_area section.detail_area table {
+      width: 100%;
+      color: #887f69;
+      margin-top: 20px;
+      font-size: 12px;
+      font-size: 1.2rem; }
+      article div#main div.products_area section.color_size_area table tr th, article div#main div.products_area div.buy_area div.confirm_info section.price_area table tr th, article div#main div.products_area div.buy_area div.confirm_info section.quantity_area table tr th, article div#main div.products_area section.detail_area table tr th,
+      article div#main div.products_area section.color_size_area table td,
+      article div#main div.products_area div.buy_area div.confirm_info section.price_area table td,
+      article div#main div.products_area div.buy_area div.confirm_info section.quantity_area table td,
+      article div#main div.products_area section.detail_area table td {
+        border: 1px #e8e4da solid;
+        height: 40px;
+        text-align: center; }
+      article div#main div.products_area section.color_size_area table th, article div#main div.products_area div.buy_area div.confirm_info section.price_area table th, article div#main div.products_area div.buy_area div.confirm_info section.quantity_area table th, article div#main div.products_area section.detail_area table th {
+        background-color: #f9f9f5; }
+      article div#main div.products_area section.color_size_area table td span, article div#main div.products_area div.buy_area div.confirm_info section.price_area table td span, article div#main div.products_area div.buy_area div.confirm_info section.quantity_area table td span, article div#main div.products_area section.detail_area table td span {
+        border: 1px #e8e4da solid;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        vertical-align: middle; }
+  article div#main div.products_area div.buy_area {
+    width: 100%; }
+    article div#main div.products_area div.buy_area div.confirm_info {
+      width: 58%;
+      float: left; }
+      @media screen and (max-width: 700px) {
+        article div#main div.products_area div.buy_area div.confirm_info {
+          float: none;
+          width: 100%; } }
+      article div#main div.products_area div.buy_area div.confirm_info section.price_area p, article div#main div.products_area div.buy_area div.confirm_info section.quantity_area p {
+        display: inline-block;
+        margin-left: 13%;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-style: italic; }
+        article div#main div.products_area div.buy_area div.confirm_info section.price_area p:first-letter, article div#main div.products_area div.buy_area div.confirm_info section.quantity_area p:first-letter {
+          font-size: 15px;
+          font-size: 1.5rem; }
+        article div#main div.products_area div.buy_area div.confirm_info section.price_area p span.price_font, article div#main div.products_area div.buy_area div.confirm_info section.quantity_area p span.price_font {
+          color: #e80f66;
+          font-size: 22px;
+          font-size: 2.2rem; }
+      @media screen and (max-width: 700px) {
+        article div#main div.products_area div.buy_area div.confirm_info section.quantity_area {
+          border-bottom: 1px #e3e8cf solid; } }
+      article div#main div.products_area div.buy_area div.confirm_info section.quantity_area form {
+        width: 40%;
+        display: inline-block;
+        margin-left: 23%; }
+        article div#main div.products_area div.buy_area div.confirm_info section.quantity_area form input {
+          line-height: 40px;
+          width: 100%;
+          font-size: 20px;
+          font-size: 2rem; }
+    article div#main div.products_area div.buy_area div.confirm_area {
+      width: 42%;
+      float: right;
+      text-align: right; }
+      @media screen and (max-width: 700px) {
+        article div#main div.products_area div.buy_area div.confirm_area {
+          float: none;
+          width: 100%;
+          text-align: center; } }
+      article div#main div.products_area div.buy_area div.confirm_area a.btn {
+        height: 45px;
+        line-height: 45px;
+        padding: 0 10%;
+        background-color: #887f69;
+        width: 100%;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        font-size: 1.4rem;
+        display: inline-block;
+        text-align: center;
+        width: 90%;
+        position: relative; }
+        @media screen and (max-width: 700px) {
+          article div#main div.products_area div.buy_area div.confirm_area a.btn {
+            margin-top: 10px;
+            padding-left: 5%; } }
+        article div#main div.products_area div.buy_area div.confirm_area a.btn span {
+          position: absolute;
+          left: 30%; }
+          @media screen and (max-width: 700px) {
+            article div#main div.products_area div.buy_area div.confirm_area a.btn span {
+              position: static; } }
+          @media screen and (max-width: 500px) {
+            article div#main div.products_area div.buy_area div.confirm_area a.btn span {
+              position: absolute; } }
+        article div#main div.products_area div.buy_area div.confirm_area a.btn:before {
+          content: "\f07a";
+          font-family: FontAwesome;
+          position: absolute;
+          left: 15%;
+          top: -1px;
+          font-size: 16px;
+          font-size: 1.6rem; }
+  article div#main div.products_area section.detail_area {
+    width: 100%; }
+    @media screen and (max-width: 700px) {
+      article div#main div.products_area section.detail_area {
+        border: none; } }
+    article div#main div.products_area section.detail_area section {
+      border-top: 1px #887f69 solid;
+      margin-top: 18px; }
+      article div#main div.products_area section.detail_area section h3 {
+        position: relative;
+        color: #98917f;
+        margin-top: 30px;
+        margin-bottom: 30px; }
+        article div#main div.products_area section.detail_area section h3:before {
+          content: "■"; }
+    article div#main div.products_area section.detail_area table tbody tr th {
+      width: 27%; }
+    article div#main div.products_area section.detail_area table tbody tr td {
+      text-align: left;
+      padding: 5px 5%; }
 
 /*# sourceMappingURL=products.css.map */

@@ -31,7 +31,7 @@
             }
             nav {
                 float: right;
-                width: 40%;
+                width: 45%;
                 margin-top: 13px;
                 font-family: $nav_h2_font;
                 @include fontsize(14);
@@ -51,8 +51,9 @@
                     }
                     li {
                         display: inline-block;
-                        padding: 0 1%;
+                        padding: 0 1.2%;
                         font-weight: bold;
+                        letter-spacing: 0.1rem;
                         @include mq(pc_s) {
                             &:nth-child(-n+4) {
                                 display: none;

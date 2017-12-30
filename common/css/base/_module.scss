@@ -44,3 +44,19 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+// linkbtn side_h
+@mixin side_h {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10%;
+    background-color: $linkbtn_c;
+    width: 100%;
+    color: $linkbtn_font_c;
+    text-decoration: none;
+    font-weight: bold;
+    @include mq(tb) {
+        margin-top: 10px;
+        padding-left: 5%;
+    }
+}
