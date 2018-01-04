@@ -107,7 +107,8 @@ article div#main div.products_area {
           width: 48%;
           margin-bottom: 5px;
           height: auto;
-          list-style: none; }
+          list-style: none;
+          cursor: pointer; }
           @media screen and (max-width: 700px) {
             article div#main div.products_area div.photo_area div.thum ul li {
               width: 19%; } }

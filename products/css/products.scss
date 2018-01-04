@@ -50,6 +50,7 @@ article div#main div.products_area {
                     margin-bottom: 5px;
                     height: auto;
                     list-style: none;
+                    cursor: pointer;
                     @include mq(tb) {
                         width: 19%;
                     }

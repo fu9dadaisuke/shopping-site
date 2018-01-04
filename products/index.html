@@ -69,6 +69,7 @@
                                     $(".sp_menu_toggle").slideToggle();
                                 });
                             });
+
                         </script>
                     </li>
                 </ul>
@@ -84,17 +85,25 @@
                         <li>商品名</li>
                     </ul>
                 </div>
+                <script>
+                    $(window).load(function() {
+                        $("#list_img a img").click(function() {
+                            var img_src = $(this).attr("src");
+                            $("#display_img img").attr("src", img_src);
+                        });
+                    });
 
+                </script>
                 <div class="products_area">
                     <section>
                         <h1>商品名が入ります</h1>
                         <p class="product_no">fa0001-91</p>
                         <div class="photo_area clearfix">
-                            <figure>
+                            <figure id="display_img">
                                 <img src="images/pro_img_01.jpg" width="410" height="410" alt="">
                             </figure>
                             <div class="thum">
-                                <ul>
+                                <ul id="list_img">
                                     <li>
                                         <a><img src="images/pro_img_01.jpg" alt=""></a>
                                     </li>
